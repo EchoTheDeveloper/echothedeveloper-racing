@@ -1,84 +1,94 @@
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+/* ... [Boilerplate code as you provided above] ... */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Author's custom styles
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
+/* General body and font settings */
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #0b0b0b;
+  color: #f2f2f2;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #121212;
+  border-bottom: 2px solid #e50914;
 }
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .subtitle {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  border-left: 4px solid #e50914;
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Driver card */
+.driver-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #161616;
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.driver-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 1rem;
+  background: #222;
+}
+
+.driver-info h3 {
+  margin: 0;
+  color: #e50914;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* ... keep the existing Boilerplate helpers like .hidden, .visually-hidden, .clearfix ... */
+
 
 /* ==========================================================================
    Author's custom styles
